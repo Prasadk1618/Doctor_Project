@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "test": "jest",  // Updated test command to run Jest tests
+    "test": "jest", 
     "lint": "eslint .",
     "build": "webpack --config webpack.config.js"
   },
@@ -18,6 +18,6 @@
     "eslint": "^8.51.0",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
-    "jest": "^29.0.3"  // Added Jest as a devDependency for testing
+    "jest": "^29.0.3" 
   }
 }
