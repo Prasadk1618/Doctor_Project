@@ -1,22 +1,21 @@
+// webpack.config.js
 const path = require('path');
 
 module.exports = {
-  entry: './src/index.js', // Entry file for your project
+  entry: './src/index.js', 
   output: {
-    path: path.resolve(__dirname, 'dist'), // Output directory
-    filename: 'bundle.js' // Output filename
+    filename: 'bundle.js',
+    path: path.resolve(__dirname, 'dist'),
   },
   module: {
     rules: [
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: 'babel-loader' // Optional, for transpiling JS
-      }
-    ]
+        use: {
+          loader: 'babel-loader',
+        },
+      },
+    ],
   },
-  resolve: {
-    extensions: ['.js'] // File extensions to resolve
-  },
-  mode: 'development' // Or 'production' depending on your needs
 };
