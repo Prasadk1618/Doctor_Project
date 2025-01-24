@@ -1,1 +1,1 @@
-console.log("Hello, Webpack!");
+<?php echo "Hello, World!"; ?>
