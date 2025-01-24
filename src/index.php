@@ -2,5 +2,5 @@
 // This is a simple PHP file for testing PHP_CodeSniffer
 
 echo "Hello, World!";
-// No closing PHP tag at the end
 
+// Ensure there is only 1 blank line at the end (no extra line here)
